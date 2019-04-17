@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/Salarylabel"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="Your Salary:"
+            android:textSize="25sp"
+            />
+
+        <EditText
+            android:id="@+id/Salarytext"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@id/Salarylabel"
+            />
+
+        <Button
+            android:id="@+id/buttona"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/Salarytext"
+            android:text="Calculate Tax"
+            android:textSize="25dp"
+            />
+
+        <TextView
+            android:id="@+id/yourtax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40dp"
+            android:layout_centerInParent="true"
+            android:text="Tax Amount"
+            />
+
+        <EditText
+            android:id="@+id/result"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/yourtax"
+            android:layout_centerHorizontal="true"
+            android:editable="false"
+            android:gravity="center"
+            />
+
+    </RelativeLayout>
+</LinearLayout>
+
